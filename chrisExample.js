@@ -7,7 +7,7 @@
 
 function ColorBox (props, idx, _allBoxes) {
   const style = {
-    border: "2px solid black",git 
+    border: "2px solid black",
     backgroundColor: props.color,
     width: "100px",
     height: "200px"
