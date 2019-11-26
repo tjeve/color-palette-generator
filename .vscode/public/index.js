@@ -9,14 +9,19 @@ const HelloWorld = () => {
 const ColorBox = (props) => {
 
     let style = {
+        border: "2px solid gray",
         backgroundColor: props.color,
-        // flex: 1,
         width: "200px",
         height: "100vh"
+
     }
     console.log(style)
     return(
-        <div style= {style} >Hello World!</div>
+        <div style= { style } className="w-100 d-flex flex-column align-items-center justify-content-center">
+            <h1>#FF00FF</h1>
+            <button className="btn btn-dark">UNLOCK</button>
+        </div>
+
     )
 }
 
@@ -28,24 +33,14 @@ const RandomizeDiv = () => {
     )
 }
 
-const ViewScreen = (props) => {
-    return (
-        <div style="background-color: blue" className="w-100 d-flex flex-column align-items-center justify-content-center">
-            <h1>#FF00FF</h1>
-            <button className="btn btn-dark">UNLOCK</button>
-        </div>
-    )
-}
-
 const App = () => {
+
     // render()
     return(
         <div>
             <RandomizeDiv />
-            <ColorBox color="red"/>
-            <ColorBox color="white"/>
-            <ColorBox color="blue"/>
-            {/* <ViewScreen /> */}
+            <ColorBox color="yellow" width="100"/>
+            <ColorBox color="red" width="100" />
         </div>
         )
     }
