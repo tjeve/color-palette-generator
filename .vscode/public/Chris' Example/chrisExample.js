@@ -38,7 +38,7 @@ class App extends React.Component {
   _randomColor() {
     return '#'+(Math.random()*0xFFFFFF<<0).toString(16);
   }
-
+    
   _newBox() {
     return {
       color: this._randomColor(),
@@ -65,6 +65,7 @@ class App extends React.Component {
   }
 
   addBox() {
+    // newBoxes takes the current state of boxes and adds a new box to that array
     const newBoxes = [...this.state.boxes, this._newBox()]
     this.setState({boxes: newBoxes})
   }
