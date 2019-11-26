@@ -5,6 +5,7 @@
 // Color Boxes with React.js
 //  app.jsx
 
+//Styles and crates a colorbox in a div
 function ColorBox (props, idx, _allBoxes) {
   const style = {
     border: "2px solid black",
@@ -45,7 +46,7 @@ class App extends React.Component {
       isLocked: false
     }
   }
-
+// randomize() makes all the colorboxes random and different colors if left unlocked
   randomize() {
     const currentBoxes = [...this.state.boxes]
     const newBoxes = currentBoxes.map((box) => {
@@ -78,6 +79,7 @@ class App extends React.Component {
 
   render() {
     // add the .toggleLock function to each box
+    // boxesWithClickFn maps over the state, takes each box and adds a click function to it.
     const boxesWithClickFn = this.state.boxes.map((box, idx) => {
       box.toggleLock = () => this.toggleLock(idx)
       return box
