@@ -11,9 +11,8 @@ const ColorBox = (props, idx, _allBoxes) => {
     let style = {
         border: "2px solid gray",
         backgroundColor: props.color,
-        width: "200px",
-        height: "100vh"
-
+        width: "100px",
+        height: "200px"
     }
 
     let btnText = 'Unlocked'
