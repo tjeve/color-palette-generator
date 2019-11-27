@@ -98,7 +98,7 @@ class App extends React.Component {
                         <button className="btn btn-secondary m-1" onClick={() => this.addBox()}>Add Box</button>
                         <button className="btn btn-secondary m-1" onClick={() => this.removeBox()}>Remove Box</button>
                         <div className="container">
-                            {boxesWithClickFn.map(ColorBox)}
+                            {boxesWithClickFn.map(ColorBox)}  
                         </div>
                     </div>
                 </div>
